@@ -1,19 +1,40 @@
 .contenedor{
     display: flex;
-    flex-direction: row-reverse;
-}
-.caja-1{
-    width: 50%;
-    height: 100vh;
-    background-color: blue;
-    font-size: 85px;
-    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
 }
 
-.caja-2{
-    width: 50%;
-    height: 100vh;
-    background-color: red;
-    font-size: 85px;
+#header{
+    flex: 100% 100 1;
+    background-color: rgb(201, 60, 60);
+    color: white;
+    text-align: center;
+}
+
+#aside-left{
+    flex: 20% 1 1;
+    background-color: rgb(183, 209, 16);
+    color: white;
+    text-align: center;
+}
+#main{
+    flex: 60% 1 1;
+    background-color: rgb(170, 60, 201);
+    color: white;
+    text-align: center;
+}
+#aside-right{
+    flex: 20% 1 1;
+    background-color: rgb(183, 209, 16);
+    color: white;
+    text-align: center;
+}
+
+#footer{
+    flex: 100% 1 1;
+    background-color: rgb(60, 201, 201);
     color: white;
 }
